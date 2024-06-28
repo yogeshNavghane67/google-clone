@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import './globals.css';
 
 
@@ -12,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body className='relative min-h-screen'>
         {children}
-   
+   <Footer/>
       </body>
     </html>
   );
