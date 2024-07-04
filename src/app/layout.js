@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer';
 import './globals.css';
+import { Suspense } from 'react';
 
 
 export const metadata = {
@@ -12,7 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className='relative min-h-screen'>
+        <Suspense>
         {children}
+        </Suspense>
+        
    <Footer/>
       </body>
     </html>
